@@ -1,10 +1,12 @@
 /* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
 #Corpo {
-    background-color:  gray;
+    background-color:  rgb(104, 104, 104);
+    text-align: center;
+    color: white;
 }
 
 #InputBotao {
-    display: flex;
+    display: flex;;
     flex-direction: column;
     align-items: center;
     margin-top: 45px;
@@ -30,4 +32,15 @@
 
 #lista-materiais {
     padding: auto;
+}
+
+#ListaL {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
 }
