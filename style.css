@@ -1,7 +1,25 @@
 /* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
-#DIVLista {
+#InputBotao {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+}
+
+#InputBotao input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+#InputBotao button {
+    padding: 10px 20px;
+    background-color: #3c9600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#lista-materiais {
+    padding: auto;
 }
