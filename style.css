@@ -12,6 +12,9 @@
     margin-top: 45px;
     background-color: white;
     border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 #InputBotao input {
@@ -43,4 +46,6 @@
     background-color: white;
     border-radius: 20px;
     color: black;
+    max-width: 600px;
+    margin: auto;
 }
