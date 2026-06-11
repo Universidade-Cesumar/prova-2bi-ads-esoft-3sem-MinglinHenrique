@@ -7,7 +7,7 @@ const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const listaMaterial = document.getElementById("lista-materiais");
 
-async function carregarMateriais() {
+async function carregarMateriais(material) {
     const resposta = await fetch(API_URL);
     const materiais = await resposta.json();
 
@@ -22,12 +22,12 @@ async function carregarMateriais() {
 
 carregarMateriais();
 
-if (inputNome.value === "" || inputQuantidade.value === "") {
-    return;
-}
-
 btnCadastrar.addEventListener("click", async () => {
-    const novoMaterial = {
+    if (inputNome.value === "" || inputQuantidade.value === "") {
+        return;
+    }
+    
+    const material = {
         nome: inputNome.value,
         quantidade: inputQuantidade.value
     };
@@ -37,11 +37,12 @@ btnCadastrar.addEventListener("click", async () => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(novoMaterial)
+        body: JSON.stringify(material)
     });
 
     inputNome.value = "";
     inputQuantidade.value = "";
 
     carregarMateriais();
+
 });
