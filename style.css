@@ -5,6 +5,14 @@
     color: white;
 }
 
+#Titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3c9600;
+    margin-bottom: 25px;
+}
+
 #InputBotao {
     display: flex;;
     flex-direction: column;
@@ -15,6 +23,7 @@
     max-width: 600px;
     margin: auto;
     margin-bottom: 25px;
+    color: black;
 }
 
 #InputBotao input {
