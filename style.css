@@ -24,7 +24,7 @@
 #InputBotao {
     font: 16px Arial, sans-serif;
     display: auto;
-    flex-direction: row;
+    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
     align-items: center;
     margin-top: 45px;
     background-color: #F0F0D8;
@@ -51,12 +51,32 @@
     margin-bottom: 10px;
 }
 
+#InputRetirada {
+    font: 16px Arial, sans-serif;
+    display: auto;
+    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
+    align-items: center;
+    margin-top: 45px;
+    background-color: #F0F0D8;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 25px;
+    color: black;
+}
+
+#InputRetirada input {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
 #ListaL {
     font: 16px Arial, sans-serif;
     margin-top: 45px;
     display: auto;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
     align-items: center;
     background-color: #F0F0D8;
     border-radius: 5px;
@@ -73,9 +93,9 @@
     border-bottom: 1px solid white;
 }
 
-#btn-baixar {
+.btn-baixar {
     padding: 5px 10px;
-    background-color: #df8615;
+    background-color: #dca735;
     color: white;
     border: none;
     cursor: pointer;
@@ -83,7 +103,7 @@
     margin: 5px;
 }
 
-#btn-excluir {
+.btn-excluir {
     padding: 5px 10px;
     background-color: #dc3545;
     color: white;

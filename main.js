@@ -17,7 +17,7 @@ async function carregarMateriais(material) {
         listaMaterial.innerHTML += `
             <td id="NomeM">${material.nome}</td>
             <td id="QuantM">${material.quantidade}</td>
-            <td id="AcaoM"><button id="btn-baixar">Baixar</button><button id="btn-excluir">Excluir</button></td>
+            <td id="AcaoM"><button class="btn-baixar">Baixar</button><button class="btn-excluir">Excluir</button></td>
         `;
     });
 }
