@@ -15,11 +15,27 @@ async function carregarMateriais(material) {
 
     materiais.forEach(material => {
         listaMaterial.innerHTML += `
+        <tr>
             <td id="NomeM">${material.nome}</td>
             <td id="QuantM">${material.quantidade}</td>
-            <td id="AcaoM"><button class="btn-baixar">Baixar</button><button class="btn-excluir">Excluir</button></td>
+            <td id="AcaoM">
+            <button class="btn-baixar" data-id="${material.id}">Baixar</button>
+            <button class="btn-excluir" data-id="${material.id}">Excluir</button></td>
+        </tr>
         `;
     });
+}
+
+function validarRetirada(estoqueAtual, quantidadeRetirada) {
+    if (quantidadeRetirada <= 0) {
+        return false;
+    }
+
+    if (quantidadeRetirada > estoqueAtual) {
+        return false;
+    }
+
+    return true;
 }
 
 carregarMateriais();
