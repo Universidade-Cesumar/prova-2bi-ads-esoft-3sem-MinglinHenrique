@@ -1,11 +1,12 @@
 /* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
 #Corpo {
-    background-color:  rgb(170, 170, 170);
+    background-color:  rgb(33, 35, 46);
     text-align: center;
     color: white;
 }
 
 #Titulo {
+    font: 16px Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,12 +22,13 @@
 }
 
 #InputBotao {
-    display: flex;;
-    flex-direction: column;
+    font: 16px Arial, sans-serif;
+    display: auto;
+    flex-direction: row;
     align-items: center;
     margin-top: 45px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     max-width: 600px;
     margin: auto;
     margin-bottom: 25px;
@@ -49,19 +51,24 @@
     margin-bottom: 10px;
 }
 
-#lista-materiais {
-    padding: auto;
-}
-
 #ListaL {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    font: 16px Arial, sans-serif;
     margin-top: 45px;
+    display: auto;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     color: black;
     max-width: 600px;
     margin: auto;
+}
+
+#lista-materiais li {
+    display: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
