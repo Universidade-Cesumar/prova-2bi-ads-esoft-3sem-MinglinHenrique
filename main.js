@@ -15,9 +15,9 @@ async function carregarMateriais(material) {
 
     materiais.forEach(material => {
         listaMaterial.innerHTML += `
-            <th id="NomeM">${material.nome}</th>
-            <th id="QuantM">${material.quantidade}</th>
-            <th id="AcaoM"><button>Excluir</button> <button>Baixar</button></th>
+            <td id="NomeM">${material.nome}</td>
+            <td id="QuantM">${material.quantidade}</td>
+            <td id="AcaoM"><button id="btn-baixar">Baixar</button><button id="btn-excluir">Excluir</button></td>
         `;
     });
 }
