@@ -24,6 +24,18 @@ async function carregarMateriais(material) {
         </tr>
         `;
     });
+
+    document.querySelectorAll(".btn-excluir").forEach(botao => {
+        botao.addEventListener("click", () => {
+            excluirMaterial(botao.dataset.id);
+        });
+    });
+
+    document.querySelectorAll(".btn-baixar").forEach(botao => {
+    botao.addEventListener("click", () => {
+        baixarMaterial(botao.dataset.id);
+    });
+});
 }
 
 function validarRetirada(estoqueAtual, quantidadeRetirada) {

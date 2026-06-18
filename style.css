@@ -92,12 +92,19 @@
     margin: auto;
 }
 
-#lista-materiais th {
-    display: auto;
-    justify-content: space-between;
-    align-items: center;
+#ListaL table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ListaL th,
+#ListaL td {
     padding: 10px;
-    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+#ListaL tr {
+    border-bottom: 1px solid #ccc;
 }
 
 .btn-baixar {
