@@ -13,6 +13,7 @@
     background-color: #df8615;
     margin-bottom: 25px;
     color: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 
     margin-top: -8px;
     margin-left: -8px;
@@ -33,6 +34,7 @@
     margin: auto;
     margin-bottom: 25px;
     color: black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 #InputBotao input {
@@ -65,7 +67,6 @@
     max-width: 800px;
     margin: auto;
     margin-bottom: 25px;
-    color: black;
 }
 
 #InputRetirada input {
@@ -90,6 +91,7 @@
     color: black;
     max-width: 600px;
     margin: auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 #ListaL table {
