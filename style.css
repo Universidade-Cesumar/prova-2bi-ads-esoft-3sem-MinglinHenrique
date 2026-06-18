@@ -18,7 +18,7 @@
     margin-left: -8px;
     margin-right: -8px;
     /* ARRUMAR ISSO DEPOIS!!!!! */
-    /* ARRUMAR MARGIN INCORRETA */
+    /* AGORA EU NÃO SEI SE ISSO ESTÁ VERDADEIRAMENTE ERRADO */
 }
 
 #InputBotao {
@@ -41,6 +41,7 @@
     width: 200px;
     background-color: #fffff3;
     border-radius: 10px;
+    border: none;
 }
 
 #InputBotao button {
@@ -74,6 +75,7 @@
     background-color: #fffff3;
     border-radius: 10px;
     color:#df8615;
+    border: none;
 }
 
 #ListaL {

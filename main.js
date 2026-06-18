@@ -64,3 +64,43 @@ btnCadastrar.addEventListener("click", async () => {
     carregarMateriais();
 
 });
+
+async function excluirMaterial(id) {
+    await fetch(`${API_URL}/${id}`, {
+        method: "DELETE"
+    });
+
+    carregarMateriais();
+}
+
+async function baixarMaterial(id) {
+
+    const retirada = Number(
+        document.getElementById("input-retirada").value
+    );
+
+    const resposta = await fetch(`${API_URL}/${id}`);
+    const material = await resposta.json();
+
+    const estoqueAtual = Number(material.quantidade);
+
+    if (!validarRetirada(estoqueAtual, retirada)) {
+        alert("Quantidade inválida");
+        return;
+    }
+
+    const novaQuantidade = estoqueAtual - retirada;
+
+    await fetch(`${API_URL}/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            nome: material.nome,
+            quantidade: novaQuantidade
+        })
+    });
+
+    carregarMateriais();
+}
