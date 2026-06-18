@@ -1,8 +1,8 @@
 /* Caso queira utilizar framework como Bootstrap para estilização, pode utilizar. Basta ignoar esse arquivo */
 #Corpo {
-    background-color:  #D8D8C0;
+    background-color: #ece7d5;
     text-align: center;
-    color: white;
+    color: #333;
 }
 
 #Titulo {
@@ -10,72 +10,72 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #df8615;
+    background-color: #b86f14;
     margin-bottom: 25px;
     color: white;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 
     margin-top: -8px;
     margin-left: -8px;
     margin-right: -8px;
-    /* ARRUMAR ISSO DEPOIS!!!!! */
-    /* AGORA EU NÃO SEI SE ISSO ESTÁ VERDADEIRAMENTE ERRADO */
 }
 
 #InputBotao {
     font: 16px Arial, sans-serif;
     display: auto;
-    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
+    flex-direction: row;
     align-items: center;
     margin-top: 45px;
-    background-color: #F0F0D8;
+    background-color: #f5f1e3;
     border-radius: 5px;
     max-width: 600px;
     margin: auto;
     margin-bottom: 25px;
-    color: black;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    color: #333;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
 #InputBotao input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: #fffff3;
+    background-color: #fffdf7;
     border-radius: 10px;
     border: none;
 }
 
 #InputBotao button {
     padding: 10px 20px;
-    background-color: #3c9600;
+    background-color: #2f7d32;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 6px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 }
 
 #InputRetirada {
     font: 16px Arial, sans-serif;
     display: auto;
-    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
+    flex-direction: row;
     align-items: center;
     margin-top: 45px;
-    background-color: #F0F0D8;
+    background-color: #f5f1e3;
     border-radius: 5px;
     max-width: 800px;
     margin: auto;
     margin-bottom: 25px;
+    color: #333;
 }
 
 #InputRetirada input {
     margin: 10px;
     padding: 10px;
     width: 200px;
-    background-color: #fffff3;
+    background-color: #fffdf7;
     border-radius: 10px;
-    color:#df8615;
+    color: #b86f14;
     border: none;
 }
 
@@ -84,14 +84,14 @@
     margin-top: 45px;
     display: auto;
     justify-content: center;
-    flex-direction: row; /* NÃO SEI SE ISSO MUDOU ALGO */
+    flex-direction: row;
     align-items: center;
-    background-color: #F0F0D8;
+    background-color: #f5f1e3;
     border-radius: 5px;
-    color: black;
+    color: #333;
     max-width: 600px;
     margin: auto;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
 #ListaL table {
@@ -111,20 +111,22 @@
 
 .btn-baixar {
     padding: 5px 10px;
-    background-color: #dca735;
+    background-color: #e0a800;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 6px;
     margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 .btn-excluir {
     padding: 5px 10px;
-    background-color: #dc3545;
+    background-color: #c82333;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 6px;
     margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }

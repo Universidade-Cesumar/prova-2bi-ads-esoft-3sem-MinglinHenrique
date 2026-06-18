@@ -1,8 +1,5 @@
 // Arquivo para código javascript
 
-if (typeof fetch === "undefined") {
-    global.fetch = require("node-fetch");
-}
 const API_URL = "https://6a29e952f59cb8f65f1dc3a5.mockapi.io/teste/materiais";
 
 const btnCadastrar = document.getElementById("btn-cadastrar");
