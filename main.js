@@ -7,7 +7,7 @@ const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const listaMaterial = document.getElementById("lista-materiais");
 
-async function carregarMateriais(material) {
+async function carregarMateriais() {
     const resposta = await fetch(API_URL);
     const materiais = await resposta.json();
 
@@ -32,10 +32,10 @@ async function carregarMateriais(material) {
     });
 
     document.querySelectorAll(".btn-baixar").forEach(botao => {
-    botao.addEventListener("click", () => {
-        baixarMaterial(botao.dataset.id);
+        botao.addEventListener("click", () => {
+            baixarMaterial(botao.dataset.id);
+        });
     });
-});
 }
 
 function validarRetirada(estoqueAtual, quantidadeRetirada) {
@@ -48,13 +48,15 @@ function validarRetirada(estoqueAtual, quantidadeRetirada) {
     return true;
 }
 
-carregarMateriais();
+if (typeof fetch !== "undefined") {
+    carregarMateriais();
+}
 
 btnCadastrar.addEventListener("click", async () => {
     if (inputNome.value === "" || inputQuantidade.value === "") {
         return;
     }
-    
+
     const material = {
         nome: inputNome.value,
         quantidade: inputQuantidade.value
@@ -72,7 +74,6 @@ btnCadastrar.addEventListener("click", async () => {
     inputQuantidade.value = "";
 
     carregarMateriais();
-
 });
 
 async function excluirMaterial(id) {
