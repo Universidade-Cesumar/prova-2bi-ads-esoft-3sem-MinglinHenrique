@@ -39,13 +39,11 @@ async function carregarMateriais(material) {
 }
 
 function validarRetirada(estoqueAtual, quantidadeRetirada) {
-    if (quantidadeRetirada <= 0) {
-        return false;
-    }
+    estoqueAtual = Number(estoqueAtual);
+    quantidadeRetirada = Number(quantidadeRetirada);
 
-    if (quantidadeRetirada > estoqueAtual) {
-        return false;
-    }
+    if (quantidadeRetirada <= 0) return false;
+    if (quantidadeRetirada > estoqueAtual) return false;
 
     return true;
 }
