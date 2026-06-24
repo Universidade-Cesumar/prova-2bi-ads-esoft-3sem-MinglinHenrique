@@ -6,14 +6,24 @@ const btnCadastrar = document.getElementById("btn-cadastrar");
 const inputNome = document.getElementById("input-nome");
 const inputQuantidade = document.getElementById("input-quantidade");
 const listaMaterial = document.getElementById("lista-materiais");
+const inputBusca = document.getElementById("input-busca");
+const totalItens = document.getElementById("total-itens");
 
 async function carregarMateriais() {
     const resposta = await fetch(API_URL);
     const materiais = await resposta.json();
 
+    totalItens.textContent = `Total de itens: ${materiais.length}`;
+
     listaMaterial.innerHTML = "";
 
     materiais.forEach(material => {
+
+        const classe =
+        Number(material.quantidade) < 10
+        ? "estoque-critico"
+        : "";
+
         listaMaterial.innerHTML += `
         <tr>
             <td id="NomeM">${material.nome}</td>

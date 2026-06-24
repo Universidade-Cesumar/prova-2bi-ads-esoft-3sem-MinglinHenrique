@@ -47,7 +47,7 @@
 #InputBusca input {
     margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     background-color: #fffdf7;
     border-radius: 10px;
     border: none;
@@ -81,7 +81,7 @@
 #InputRetirada input {
     margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     background-color: #fffdf7;
     border-radius: 10px;
     color: #b86f14;
@@ -138,4 +138,8 @@
     border-radius: 6px;
     margin: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.estoque-critico {
+    background-color: #ffb3b3;
 }
