@@ -10,6 +10,7 @@ const inputBusca = document.getElementById("input-busca");
 const totalItens = document.getElementById("total-itens");
 
 async function carregarMateriais() {
+    try {
     const resposta = await fetch(API_URL);
     const materiais = await resposta.json();
 
@@ -53,6 +54,10 @@ const materiaisFiltrados = materiais.filter(material =>
             baixarMaterial(botao.dataset.id);
         });
     });
+    } catch (erro) {
+        console.error(erro);
+        alert("Erro ao carregar materiais.");
+    }
 }
 
 function validarRetirada(estoqueAtual, quantidadeRetirada) {
