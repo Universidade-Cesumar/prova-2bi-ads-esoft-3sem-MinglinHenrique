@@ -13,11 +13,17 @@ async function carregarMateriais() {
     const resposta = await fetch(API_URL);
     const materiais = await resposta.json();
 
+    const busca = inputBusca.value.toLowerCase();
+
+const materiaisFiltrados = materiais.filter(material =>
+    material.nome.toLowerCase().includes(busca)
+);
+
     totalItens.textContent = `Total de itens: ${materiais.length}`;
 
     listaMaterial.innerHTML = "";
 
-    materiais.forEach(material => {
+    materiaisFiltrados.forEach(material => {
 
         let classe = "";
 
@@ -126,3 +132,7 @@ async function baixarMaterial(id) {
 
     carregarMateriais();
 }
+
+inputBusca.addEventListener("input", () => {
+    carregarMateriais();
+});
