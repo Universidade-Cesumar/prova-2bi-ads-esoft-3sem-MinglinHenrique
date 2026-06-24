@@ -104,14 +104,21 @@ btnCadastrar.addEventListener("click", async () => {
 });
 
 async function excluirMaterial(id) {
+    try {
     await fetch(`${API_URL}/${id}`, {
         method: "DELETE"
     });
 
-    carregarMateriais();
+        carregarMateriais();
+
+    } catch (erro) {
+        console.error(erro);
+        alert("Erro ao excluir material.");
+    }
 }
 
 async function baixarMaterial(id) {
+    try {
 
     const retirada = Number(
         document.getElementById("input-retirada").value
@@ -140,7 +147,12 @@ async function baixarMaterial(id) {
         })
     });
 
-    carregarMateriais();
+        carregarMateriais();
+
+    } catch (erro) {
+        console.error(erro);
+        alert("Erro ao baixar material.");
+    }
 }
 
 inputBusca.addEventListener("input", () => {
