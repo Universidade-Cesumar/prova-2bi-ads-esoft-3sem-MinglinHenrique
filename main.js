@@ -75,6 +75,7 @@ if (typeof fetch !== "undefined") {
 }
 
 btnCadastrar.addEventListener("click", async () => {
+    try {
     if (inputNome.value === "" || inputQuantidade.value === "") {
         return;
     }
@@ -96,6 +97,10 @@ btnCadastrar.addEventListener("click", async () => {
     inputQuantidade.value = "";
 
     carregarMateriais();
+    } catch (erro) {
+        console.error(erro);
+        alert("Erro ao cadastrar material.");
+    }
 });
 
 async function excluirMaterial(id) {

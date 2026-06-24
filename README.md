@@ -37,7 +37,3 @@ Sistema de controle de almoxarifado desenvolvido com HTML, CSS e JavaScript, com
 - Abra o arquivo `index.html` em qualquer navegador moderno
 - É necessária conexão com a internet, pois os dados são buscados e salvos em uma API externa
 - Utilize a interface para cadastrar, buscar, retirar e excluir materiais
-
-## Observações
-
-- O campo de "Quantidade a retirar" é único na tela (não é por item da lista). O valor informado é aplicado ao material cujo botão "Baixar" for clicado em seguida.
