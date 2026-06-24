@@ -2,7 +2,7 @@
 
 # Sistema de Almoxarifado
 
-**Deploy:** link que eu não tenho ainda
+**Deploy:** [https://universidade-cesumar.github.io/prova-2bi-ads-esoft-3sem-MinglinHenrique/]
 
 Sistema de controle de almoxarifado desenvolvido com HTML, CSS e JavaScript, com o objetivo de gerenciar o cadastro, listagem, busca e retirada de materiais. Os dados são persistidos em uma API REST externa (MockAPI).
 
