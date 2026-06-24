@@ -19,15 +19,16 @@ async function carregarMateriais() {
 
     materiais.forEach(material => {
 
-        const classe =
-        Number(material.quantidade) < 10
-        ? "estoque-critico"
-        : "";
+        let classe = "";
+
+    if (Number(material.quantidade) < 10) {
+    classe = "estoque-critico";
+    }
 
         listaMaterial.innerHTML += `
         <tr>
             <td id="NomeM">${material.nome}</td>
-            <td id="QuantM">${material.quantidade}</td>
+            <td id="QuantM" class="${classe}">${material.quantidade}</td>
             <td id="AcaoM">
             <button class="btn-baixar" data-id="${material.id}">Baixar</button>
             <button class="btn-excluir" data-id="${material.id}">Excluir</button></td>
